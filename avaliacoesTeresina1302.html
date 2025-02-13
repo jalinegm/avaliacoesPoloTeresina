@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliações da Formação no Polo São Luís</title>
+    <style>
+        body {
+            font-family: 'Montaser Arabic', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #3c3c3c;
+        }
+        h2, h1 {
+            text-align: center;
+        }
+        h1 {
+            color: #183eff;
+            font-weight: bold;
+            margin-bottom: 1.2em;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
+        .ratings-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            justify-content: center;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 2em;
+        }
+        @media (min-width: 768px) {
+            .ratings-container {
+                grid-template-columns: repeat(4, 1fr);
+                max-width: 900px;
+            }
+        }
+        .rating-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .stars {
+            display: flex;
+            justify-content: center;
+        }
+        p {
+            font-style: italic;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.imgur.com/qVBzHbe.png" alt="Logo Cecate">
+    </div>
+    <h1>Avaliações da Formação no Polo São Luís</h1>
+    
+    <div class="ratings-container">
+        <script>
+            const avaliacoes = {
+                "Inscrição": 5.0,
+                "Divulgação": 4.9,
+                "Data do Evento": 4.9,
+                "Horário": 5.0,
+                "Duração": 5.0,
+                "Local": 4.8,
+                "Recepção": 4.9,
+                "Geral": 5.0
+            };
+
+            function desenharEstrelas(nota) {
+                let estrelas = "";
+                for (let i = 0; i < 4; i++) {
+                    estrelas += `<svg width="24" height="24" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="12,2 15,10 23,10 17,15 19,23 12,18 5,23 7,15 1,10 9,10"/>
+                                  </svg>`;
+                }
+                estrelas += `<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="half-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="50%" style="stop-color: gold;" />
+                                        <stop offset="50%" style="stop-color: gray;" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="12,2 15,10 23,10 17,15 19,23 12,18 5,23 7,15 1,10 9,10" fill="url(#half-gold)"/>
+                              </svg>`;
+                return estrelas;
+            }
+
+
+            for (const [titulo, nota] of Object.entries(avaliacoes)) {
+                document.write(`
+                    <div class="rating-card">
+                        <h4>${titulo}</h4>
+                        <div class="stars">${desenharEstrelas(nota)}</div>
+                        <p style="margin: 10px 0 0; font-size: 18px; font-weight: bold;">Nota: ${nota.toFixed(1)}</p>
+                    </div>
+                `);
+            }
+        </script>
+    </div>
+    
+    <div class="container">
+        <h3>Indique dois aspectos que você mais gostou na atividade de formação do Cecate Nordeste:</h3>
+        <p>orientações sobre sistema SETE e BB Ágil.</p>
+<p>orientações sobre o FUNDEB </p>
+<p>Exposição dos assuntos e escuta ativa</p>
+<p></p>
+<p>As orientações sobre o uso sistema SETE
+Às normativas a cerca do transporte escolar </p>
+<p>As atualizações de aplicativos e legislação;
+Esclarecimentos sobre Censo</p>
+<p>transporte </p>
+<p>Gostei de todas atividades da formação.</p>
+<p>manuseio da plataforma sete </p>
+<p>sete e sobre o cacs-fundeb </p>
+<p>Franqueza e diálogo amigável entre os ministrantes da formação e os participantes.</p>
+<p>divulgação 
+interação </p>
+<p>aprendizagem sobre o SETE</p>
+<p>otimo</p>
+<p>1 novos conhecimentos adquirido durante a as palestras.
+2 esclarecimentos sobre algumas funcionalidades do FUDEB.</p>
+<p>formação sobre cacsfundeb;
+exposição do sistema sete</p>
+<p>Informações sobre o SETE,  facilitadores </p>
+<p>todos</p>
+<p>explicação dos sistemas</p>
+<p>sistema
+informações </p>
+<p>aprender sobre o sete</p>
+<p>conhecer plataforma SETE.
+Informações sobre atuação CACS-FUNDEB.</p>
+<p>palestrantes e as informações prestadas </p>
+<p>tranporte escolar
+sete</p>
+<p>Conhecimento 
+</p>
+<p>sobre o sigecon e também o que pode ou não em relação ao transporte escolar </p>
+<p>organização do evento e participação </p>
+<p>orientação sobre os direitos e deveres dos getores no que desrespeito ao transporte escolar e orientação sobre atualização do FNDE</p>
+<p>Conteúdo 
+Apresentação </p>
+<p>1. Interatividade com a plateia.
+2. Discussão das peculiaridades dos municípios </p>
+<p>As orientações e diálogos sobre a temática </p>
+<p>amostra do sistema SETE
+orientação para fazer a regulamentação municipal </p>
+<p>ORGANIZAÇÃO 
+PALESTRANTES</p>
+
+    </div>
+    
+    <div class="container">
+        <h3>Indique dois aspectos que você menos gostou na atividade de formação do Cecate Nordeste:</h3>
+        
+        <p>não tenho nenhuma pauta que não gostei.</p>
+<p>orientações sobre o transporte escolar </p>
+<p>pouco tempo e muitas informações </p>
+<p></p>
+<p>O lanche ofertado 
+O tempo, deveria ter mais tempo para troca de experiências; </p>
+<p>Espaço limitado para o grupo de CACS, apenas.</p>
+<p>faltou copos de beber água rsrs.
+brincadeira!</p>
+<p></p>
+<p>não houve </p>
+<p>não tenho </p>
+<p>A ausência de almoço somente.</p>
+<p>nenhum </p>
+<p>não tem </p>
+<p>pouca duração </p>
+<p> o horário prolongado.
+</p>
+<p>não tenho nada a declarar a não ser o tempo curto</p>
+<p>horário do início do encontro. </p>
+<p>não houve</p>
+<p>nada</p>
+<p>gostei de todos</p>
+<p></p>
+<p>Pouco tempo pra debate.
+</p>
+<p></p>
+<p>nao tevi</p>
+<p>Não houve.</p>
+<p></p>
+<p>a parte da tarde foi mais específica para técnicos e dirigentes municipais, não foi muito proveitoso para conselheiros do cacs. espaço físico estava um pouco quente</p>
+<p>A falta de uma palestra mais dinâmica e nos mostrar passo a passo como entrar nas plataformas referentes ao cecate</p>
+<p>Data
+Estrutura</p>
+<p>Sem reclamações </p>
+<p>Nada a destacar </p>
+<p>nenhuma</p>
+<p>Alimentação 
+água</p>
+
+    </div>
+    
+    <div class="container">
+        <h3>Faça comentários ou sugestões que nos ajudem a melhorar os encontros com o Cecate Nordeste:</h3>
+        <p>Só parabenizar pelo evento.... Foi de grande valia para todos os municípios que participaram. esperando que essas formações aconteça com mais frequência. parabéns a todos pela condução do evento.</p>
+<p>encontro muito produtivo </p>
+<p>Que tenha mais encontros para discutir essa temática</p>
+<p></p>
+<p>um encontro com mais dias </p>
+<p>Termos continuidade nas formações.</p>
+<p>ter 2 dias ou mais rsrs de formação </p>
+<p>Nada a reclamar </p>
+<p>foi muito bom. continuem assim </p>
+<p>foi ótimo gostei muito  </p>
+<p>Estava tudo perfeito. O que eu gostaria mesmo era de mais tempo para aprender mais e mais. risos.</p>
+<p>mais encontros </p>
+<p>evento ótimo </p>
+<p>otimo</p>
+<p>planejamento de horário, um pouco cansativo.</p>
+<p>Direcionar para uma melhor explicação de como o CACS pode fiscalizar a aplicação dos recursos, incluísse se possuem oferecer uma capacitação somente para conselheiros do CACS</p>
+<p>objetividade.</p>
+<p>Super top...sigamos adiante
+..precisando de um tecnico estou a disposição.</p>
+<p>nada</p>
+<p>excelentes </p>
+<p></p>
+<p>fazer encontros mais frequentes </p>
+<p></p>
+<p>mais tempo de formação </p>
+<p>Não há </p>
+<p>Mais formação voltadas para concelheiros do CACS FUNDB</p>
+<p>continuem com essa força e ânimo para fazer as formações </p>
+<p></p>
+<p></p>
+<p>Possibilidade de intensificar o contato com os municípios </p>
+<p>Trazer membros dos órgãos de trânsito e do tribunal de contas como palestrantes.</p>
+<p>ajudar aos municípios orientando como criar a regulamentação municipal como critérios usados, etc</p>
+<p>ORGANIZAR OUTROS EVENTOS DESSES COM MAIOR FREQUÊNCIA. </p>
+
+    </div>
+</body>
+</html>
